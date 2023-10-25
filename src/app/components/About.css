@@ -33,7 +33,6 @@
 .my-name {
   color: var(--primaryColor);
   font-size: 120px;
-  font-weight: 700;
   line-height: 115px;
 }
 
@@ -42,7 +41,6 @@
   color: #1e50dd;
   font-weight: 500;
   line-height: 85px;
-  font-weight: 800;
   background: -webkit-linear-gradient(45deg, #09009f, #00e385 80%);
   background-clip: text;
   -webkit-background-clip: text;
