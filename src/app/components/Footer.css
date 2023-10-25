@@ -1,0 +1,64 @@
+/* FOOTER */
+footer {
+  font-size: var(--bodyFontDesktopFooter);
+  background-color: #333333;
+  color: var(--tertiaryColor);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+footer img {
+  width: 45px;
+  height: 45px;
+  margin-top: 13px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer div div {
+  font-size: 28px;
+}
+
+footer a {
+  color: var(--tertiaryColor);
+}
+
+/* TABLET */
+@media only screen and (max-width: 1200px) {
+  footer {
+    padding-left: clamp(1em, 2vw, 2em);
+    padding-right: clamp(1em, 7vw, 7em);
+    font-size: min(20px, 120%);
+  }
+}
+
+/* ADDITION BREAKPOINT */
+@media only screen and (max-width: 630px) {
+  footer {
+    flex-direction: column;
+    line-height: normal;
+    align-items: center;
+    gap: 40px;
+  }
+  footer div {
+    align-items: center;
+  }
+}
+
+/* PHONE */
+@media only screen and (max-width: 415px) {
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: var(--bodyFontPhoneFooter);
+    line-height: normal;
+  }
+}

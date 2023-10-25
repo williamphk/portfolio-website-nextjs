@@ -1,0 +1,42 @@
+/* MAIN */
+#root {
+  display: flex;
+}
+
+section {
+  padding: 45px 0px;
+  margin: 5px;
+}
+
+.section-title {
+  padding-left: clamp(1em, 2vw, 2em);
+  color: var(--primaryColor);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1200px) {
+  #root {
+    flex-direction: column;
+  }
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* PHONE */
+@media only screen and (max-width: 415px) {
+  section {
+    padding: 10px 0;
+    margin: 10px;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,275 @@
+/* ABOUT */
+.about {
+  height: auto;
+  border-radius: 25px;
+  margin: 5px;
+  padding-left: clamp(1em, 2vw, 2em);
+  padding-right: clamp(1em, 2vw, 2em);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../public/images/about-background.png");
+  background-size: cover;
+}
+.self-introduction {
+  color: var(--secondaryColor);
+  font-size: var(--bodyFontDesktop);
+  margin-top: 0;
+  padding: 0 30%;
+}
+
+.profile-pic {
+  position: absolute;
+  left: 84%;
+  top: 6.5%;
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  margin-top: 20px;
+  border: 5px solid var(--tertiaryColor);
+}
+
+.my-name {
+  color: var(--primaryColor);
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 115px;
+}
+
+.job-title {
+  font-size: 65px;
+  color: #1e50dd;
+  font-weight: 500;
+  line-height: 85px;
+  font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #09009f, #00e385 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 5px;
+  width: 53%;
+}
+
+.skills img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.about p:nth-child(4) {
+  margin-top: 1em;
+}
+
+.about-section-button {
+  display: block;
+  width: 266px;
+  height: 66px;
+  color: var(--primaryColor);
+  text-align: center;
+  line-height: 60px;
+  border: 3px solid var(--secondaryColor);
+  border-radius: 10px;
+  margin-top: 36px;
+  font-size: var(--bodyFontDesktop);
+  transition: transform 0.4s;
+}
+
+.button__shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  border: 3px solid var(--secondaryColor);
+  z-index: -1;
+  transition: transform 0.3s;
+  opacity: 0;
+}
+
+.about-section-button:hover {
+  color: var(--tertiaryColor);
+  background-color: var(--secondaryColor);
+  transform: rotate(-4deg) scale(1.1);
+}
+.about-section-button:hover .button__shadow {
+  opacity: 1;
+  transform: translate(-0.7rem, 0.7rem);
+}
+
+.icon-wrapper {
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.icon-wrapper > a {
+  color: var(--primaryColor);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-wrapper > a:hover {
+  color: #666666;
+}
+
+/* Source: https://codingartistweb.com/2022/01/scroll-down-button-html-css-tutorial/ */
+a#scroll-btn {
+  position: relative;
+  height: 3.3em;
+  width: 1.7em;
+  border: 2px solid var(--primaryColor);
+  margin-top: 30px;
+  bottom: 0em;
+  border-radius: 3em;
+  transition: transform 0.2s ease-in-out;
+}
+a#scroll-btn:hover {
+  transform: scale(1.1);
+}
+a#scroll-btn:before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1.2em;
+  height: 0.4em;
+  width: 0.3em;
+  background-color: var(--primaryColor);
+  border-radius: 35%;
+  animation: move-down 3s infinite;
+}
+@keyframes move-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(1.25em);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+a#scroll-btn:after {
+  position: absolute;
+  content: "SCROLL DOWN";
+  width: 12em;
+  left: -3.6em;
+  display: block;
+  bottom: -2em;
+  font-size: 1em;
+  color: var(--primaryColor);
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+/* TABLET */
+@media only screen and (max-width: 1200px) {
+  .about {
+    padding-left: clamp(1em, 4vw, 4em);
+    padding-right: clamp(1em, 4vw, 4em);
+    padding-bottom: 12%;
+    background-size: auto;
+  }
+  .profile-pic {
+    position: static;
+  }
+  .my-name {
+    font-size: min(90px, 15vw);
+    line-height: normal;
+  }
+  .job-title {
+    font-size: min(60px, 10vw);
+    line-height: normal;
+  }
+  .self-introduction {
+    padding: 0 10%;
+  }
+  .skills {
+    width: 70%;
+  }
+  .skills img {
+    width: 35px;
+    height: 35px;
+  }
+  .icon-wrapper > * {
+    font-size: min(90px, 10vw);
+  }
+}
+
+/* ADDITION BREAKPOINT */
+@media only screen and (max-width: 630px) {
+  .icon-wrapper {
+    gap: 14px;
+  }
+}
+
+/* PHONE */
+@media only screen and (max-width: 415px) {
+  /* ABOUT*/
+  .about {
+    margin: 10px;
+  }
+  .self-introduction {
+    font-size: var(--bodyFontPhone);
+    padding: 0 3%;
+  }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+  .about-section-button {
+    display: none;
+  }
+  .skills {
+    width: 85%;
+  }
+  .skills img {
+    width: 25px;
+    height: 25px;
+  }
+  .icon-wrapper {
+    margin-bottom: 30px;
+    gap: 14px;
+  }
+  .icon-wrapper > a {
+    font-size: var(--bodyFontPhone);
+  }
+  a#scroll-btn {
+    height: 2.5em;
+    width: 1.2em;
+    margin-top: 0;
+  }
+  @keyframes move-down {
+    0% {
+      transform: translateY(-0.5em);
+    }
+    50% {
+      transform: translateY(0.5em);
+    }
+    100% {
+      transform: translateY(-0.5em);
+    }
+  }
+  a#scroll-btn:after {
+    position: absolute;
+    content: "SCROLL DOWN";
+    width: 12em;
+    left: -3.6em;
+    display: block;
+    bottom: -2em;
+    font-size: 0.8em;
+    color: var(--primaryColor);
+    letter-spacing: 3px;
+    font-weight: 600;
+  }
+}

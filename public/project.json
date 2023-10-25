@@ -1,0 +1,36 @@
+[
+  {
+    "projectName": "Odin-book",
+    "blurb": "Odin-book is more than just a social media platform; it's a seamless journey crafted with the MERN stack (MongoDB, Express.js, React, Node.js). With responsive design and personalized user customization features, Odin-book sets the stage for a new era of online interaction. Dive in, and let Odin-book redefine your social media experience.",
+    "githubFrontEndURL": "https://github.com/williamphk/Odin-Book-frontend/",
+    "githubBackEndURL": "https://github.com/williamphk/Odin-Book-API/",
+    "liveURL": "https://williamphk.github.io/Odin-Book-frontend/"
+  },
+  {
+    "projectName": "Hikouki Anime",
+    "blurb": [
+      "Hikouki Anime Hub is a destination for anime enthusiasts, crafted using ASP.NET MVC and Entity Framework. Instead of searching aimlessly for anime reviews, let Hikouki Anime Hub be your guide! This web application offers a comprehensive platform where users can browse anime titles, share their own insights, and explore reviews posted by others.",
+      "The system is designed with meticulous CRUD operations across three interconnected tables, facilitating 1-to-many and many-to-many relationships. Tailored features such as user-specific review editing and image uploading elevate the experience, making Hikouki Anime Hub a must-visit for every anime fan."
+    ],
+    "githubURL": "https://github.com/williamphk/Passion_Project/",
+    "liveURL": "https://www.youtube.com/watch?v=tX8cEEDMW7o/"
+  },
+  {
+    "projectName": "The Battleship",
+    "blurb": "The Battleship is a dynamic web game that brings the classic board game Battleship to life using JavaScript and Webpack. Instead of facing a predictable opponent, engage with a challenging bot built with a unique algorithm that recalculates the probability density after each move. Let The Battleship put your naval tactics to the test!",
+    "githubURL": "https://github.com/williamphk/odin_Battleship/",
+    "liveURL": "https://williamphk.github.io/Odin_Battleship/"
+  },
+  {
+    "projectName": "AI Ingredient Mixer",
+    "blurb": "AI Ingredient Mixer is a web application that assists users in generating recipes based on the ingredients they have. Instead of trying to figure out what to cook, let AI Ingredient Mixer do the thinking for you!",
+    "githubURL": "https://github.com/williamphk/DiscountDish/",
+    "liveURL": "http://recipe.williamphk.com/"
+  },
+  {
+    "projectName": "Easy Portfolio",
+    "blurb": "Easy Portfolio is a web platform CMS built by PHP and Laravel designed to help professionals showcase their work effortlessly. Instead of updating the code for your portfolio site manually, let Easy Portfolio manage the content for you! After you have updated the content, the changes will be reflected on your portfolio site immediately through the magic of Laravel API and JSON.",
+    "githubURL": "https://github.com/williamphk/portfolio-laravel-API/",
+    "liveURL": "http://3.145.155.140/"
+  }
+]
